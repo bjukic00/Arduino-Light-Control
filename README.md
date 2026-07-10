@@ -74,3 +74,5 @@ Before starting, ensure you have the following components and accounts:
 1. **Configuration:** Update the `ssid` and `password` variables in your `main.cpp` to match your home Wi-Fi.
 2. **Wiring:** Connect the ESP32 to the relay module.
 3. **Upload:** Connect your ESP32 to your computer and click "Upload" in PlatformIO.
+
+> **⚠️ SECURITY NOTE:** While your `CHAT_ID` acts as a "bouncer" to prevent unauthorized commands, never push your `main.cpp` with your actual `BOTtoken` to a public repository. If your token is exposed, anyone can access your bot's history or send messages to it, even if they cannot trigger your relay. Always use environment variables or a separate configuration file (added to your `.gitignore`) to keep your credentials private.
