@@ -1,7 +1,7 @@
 # ESP32 Telegram Smart Switch
 This project is an IoT smart switch solution that allows you to control high-voltage home appliances remotely using an ESP32 microcontroller and the Telegram messaging app. By leveraging a relay module, the system safely bridges the gap between low-voltage digital electronics and household appliances. It includes a security layer to ensure that only you—the authorized owner—can trigger the device, making it a reliable and private home automation tool.
 
-## 🛠 Technologies
+## 🛠️  Technologies
 
 - **UniversalTelegramBot:** This is the core library that handles the complexity of the Telegram Bot API. Instead of you writing raw code to interact with web servers, this library acts as a translator. It converts your C++ commands into secure HTTPS requests, manages the polling mechanism to check for new messages, and automatically parses the complex JSON responses from Telegram into easy-to-use C++ variables.
 
